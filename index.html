@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegamovies Style Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons (Optional, e.g., for Telegram) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section (Keep the previous header structure or adapt) -->
+    <header id="main-header">
+        <div class="container header-top-bar">
+            <!-- Logo and Main Nav -->
+            <div class="logo">
+                 <h1><a href="/">VEGAMOVIES30</a></h1>
+                 <!-- Or: <img src="assets/logo.png" alt="Vegamovies Logo"> -->
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#featured"><i class="fas fa-star"></i> FEATURED</a></li>
+                    <li><a href="#genres"><i class="fas fa-globe"></i> GENRE</a></li>
+                    <li><a href="#year">BY YEAR</a></li>
+                    <li><a href="#quality">BY QUALITIES</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container header-search-bar">
+             <!-- Search Bar -->
+             <form id="search-form" class="search-bar">
+                <input type="search" id="search-input" placeholder="Search ..." aria-label="Search movies">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <main class="container main-content">
+
+        <!-- Main Category Buttons -->
+        <section class="main-categories">
+            <a href="#" class="btn btn-hindi">Hindi Movies</a>
+            <a href="#" class="btn btn-bollywood">Bollywood (New)</a>
+            <a href="#" class="btn btn-desi">18+ Desi Junction</a>
+            <a href="#" class="btn btn-telegram"><i class="fab fa-telegram-plane"></i> Join Telegram</a>
+        </section>
+
+        <!-- Filter Tag Buttons -->
+        <section class="filter-tags">
+            <button class="filter-btn active" data-genre="Trending">Trending</button>
+            <button class="filter-btn" data-genre="Anime">Anime</button>
+            <button class="filter-btn" data-genre="K-Drama">K-Drama</button>
+            <button class="filter-btn" data-genre="Prime Video">AMZN Prime</button>
+            <button class="filter-btn" data-genre="Netflix">Netflix</button>
+            <button class="filter-btn" data-genre="English">English</button>
+            <!-- Add more filter buttons as needed -->
+        </section>
+
+        <!-- Movie Grid Section -->
+        <section id="movie-grid-container">
+            <!-- Title could go here if needed: <h2>Latest Movies</h2> -->
+            <div id="movie-grid" class="movie-grid">
+                <!-- === Movie Card Example 1 === -->
+                <article class="movie-card">
+                    <div class="poster-container">
+                        <img src="https://via.placeholder.com/300x450/2a2a2a/ffffff?text=Den+of+Thieves+2" alt="Den of Thieves 2: Pantera Poster" loading="lazy">
+                        <span class="quality-tag blu-ray">Blu-Ray</span>
+                    </div>
+                    <div class="details">
+                        <p class="date">MARCH 28, 2025</p>
+                        <h3 class="title"><a href="#">Download Den of Thieves 2: Pantera</a></h3>
+                        <p class="info">(2025) Dual Audio [Hindi-English] BluRay 480p [700MB] | 720p...</p>
+                    </div>
+                </article>
+
+                <!-- === Movie Card Example 2 === -->
+                <article class="movie-card">
+                    <div class="poster-container">
+                        <img src="https://via.placeholder.com/300x450/2a2a2a/ffffff?text=House+of+David" alt="House of David Poster" loading="lazy">
+                         <span class="quality-tag web-dl">WEB-DL</span>
+                    </div>
+                    <div class="details">
+                        <p class="date">MARCH 27, 2025</p>
+                        <h3 class="title"><a href="#">Download House of David (2025) Season 1</a></h3>
+                        <p class="info">Dual Audio [Hindi-English] Amazon Original Web Serie...</p>
+                    </div>
+                </article>
+
+                <!-- === Movie Card Example 3 === -->
+                 <article class="movie-card">
+                    <div class="poster-container">
+                        <img src="https://via.placeholder.com/300x450/2a2a2a/ffffff?text=Ladys+Companion" alt="The Ladys Companion Poster" loading="lazy">
+                        <span class="quality-tag web-dl">WEB-DL</span>
+                    </div>
+                    <div class="details">
+                        <p class="date">MARCH 29, 2025</p>
+                        <h3 class="title"><a href="#">Download The Ladys Companion (Season 1)</a></h3>
+                        <p class="info">Dual Audio [Hindi-English] Netflix-Series 480p | 720p...</p>
+                    </div>
+                </article>
+
+                 <!-- === Movie Card Example 4 === -->
+                 <article class="movie-card">
+                    <div class="poster-container">
+                        <img src="https://via.placeholder.com/300x450/2a2a2a/ffffff?text=When+Life+Gives" alt="When Life Gives You Tangerines Poster" loading="lazy">
+                        <span class="quality-tag web-dl">WEB-DL</span>
+                    </div>
+                    <div class="details">
+                        <p class="date">MARCH 29, 2025</p>
+                        <h3 class="title"><a href="#">Download When Life Gives You Tangerines (2025)</a></h3>
+                        <p class="info">Season 1 [S01E16 Added] Multi Audio [Hindi-English...</p>
+                    </div>
+                </article>
+
+                <!-- === Movie Card Example 5 === -->
+                 <article class="movie-card">
+                    <div class="poster-container">
+                        <img src="https://via.placeholder.com/300x450/2a2a2a/ffffff?text=Hit+Man" alt="Hit Man Poster" loading="lazy">
+                         <span class="quality-tag web-dl">WEB-DL</span>
+                    </div>
+                    <div class="details">
+                        <p class="date">MARCH 29, 2025</p>
+                        <h3 class="title"><a href="#">Download Hit Man (2022)</a></h3>
+                        <p class="info">Dual Audio [Hindi-English] WEB-DL 480p [420MB] | 720p [970MB] | 1080p...</p>
+                    </div>
+                </article>
+
+                 <!-- === Movie Card Example 6 === -->
+                 <article class="movie-card">
+                    <div class="poster-container">
+                        <img src="https://via.placeholder.com/300x450/2a2a2a/ffffff?text=The+Life+List" alt="The Life List Poster" loading="lazy">
+                        <span class="quality-tag web-dl">WEB-DL</span>
+                    </div>
+                    <div class="details">
+                        <p class="date">MARCH 28, 2025</p>
+                        <h3 class="title"><a href="#">Download The Life List (2025)</a></h3>
+                        <p class="info">WEB-DL Dual Audio [Hindi-English] 480p [450MB] | 720p [1.2GB] | 1080p...</p>
+                    </div>
+                </article>
+
+                <!-- Add more <article class="movie-card"> elements here (or generate with JS) -->
+                <!-- Repeat the structure for other movies like Carjackers, Twilight, Premika, Operation Endgame, etc. -->
+
+            </div>
+        </section>
+
+        <!-- Pagination Section -->
+        <nav class="pagination" aria-label="Page navigation">
+            <ul id="pagination-controls">
+                 <li class="active"><span>1</span></li>
+                 <li><a href="#">2</a></li>
+                 <li><a href="#">3</a></li>
+                 <li><span>...</span></li>
+                 <li><a href="#">Next ></a></li>
+                <!-- Pagination controls will be generated/updated by JavaScript -->
+            </ul>
+        </nav>
+
+    </main>
+
+    <!-- Footer Section (Keep or adapt) -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>© <span id="current-year">2025</span> YourSiteName. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script> <!-- JS for dynamic loading/filtering -->
+</body>
+</html>
